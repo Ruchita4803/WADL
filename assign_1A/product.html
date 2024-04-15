@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #cffffe;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333; /* Set color */
+  font-size: 2rem; /* Set font size */
+  text-transform: uppercase; /* Transform text to uppercase */
+  font-weight: bold; /* Set font weight */
+  letter-spacing: 2px; /* Increase letter spacing */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1); /* Add text shadow */
+}
+
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .product {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .product-img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-title {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .product-price {
+      font-size: 1.25rem;
+      color: #17a2b8;
+    }
+
+    .product-description {
+      margin-top: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .product-img {
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Product Page Content -->
+  <h2>Products</h2>
+  <div class="container">
+    <div class="product">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="product-img" src="bag.jpeg" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="product-title">Bag</h2>
+          <p class="product-price">$499.99</p>
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque ex vel faucibus. Suspendisse potenti. Donec at placerat est. Quisque fringilla lacus eget tortor porta, vel cursus mi sodales.</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="product-img" src="images.jpeg" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="product-title">Shoes</h2>
+          <p class="product-price">$499.99</p>
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque ex vel faucibus. Suspendisse potenti. Donec at placerat est. Quisque fringilla lacus eget tortor porta, vel cursus mi sodales.</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="product-img" src="kurti.jpeg" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="product-title">Kurti</h2>
+          <p class="product-price">$699.99</p>
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque ex vel faucibus. Suspendisse potenti. Donec at placerat est. Quisque fringilla lacus eget tortor porta, vel cursus mi sodales.</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product">
+      <div class="row">
+        <div class="col-md-6">
+          <img class="product-img" src="jeans.avif" alt="Product Image">
+        </div>
+        <div class="col-md-6">
+          <h2 class="product-title">Jeans</h2>
+          <p class="product-price">$999.99</p>
+          <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque ex vel faucibus. Suspendisse potenti. Donec at placerat est. Quisque fringilla lacus eget tortor porta, vel cursus mi sodales.</p>
+          <button class="btn btn-primary">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

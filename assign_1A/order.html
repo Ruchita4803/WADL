@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      color: #333;
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .order {
+      background-color: #d4ecff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .order-number {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #17a2b8;
+    }
+
+    .order-details {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    .order-status {
+      font-size: 1.25rem;
+      margin-bottom: 5px;
+      color: #28a745; /* Green color for status */
+    }
+  </style>
+</head>
+<body>
+  
+  <!-- Order Page Content -->
+  <h2>Orders</h2>
+  <div class="container">
+    <div class="order">
+      <h3 class="order-number">Order #12345</h3>
+      <p class="order-details">Customer: Ashish Kharade</p>
+      <p class="order-details">Total Amount: $100.00</p>
+      <p class="order-status">Status: Shipped</p>
+      <p class="order-details">Date: January 1, 2024</p>
+    </div>
+
+    <!-- Add more order entries -->
+    <!-- Example for additional orders -->
+    <!-- Repeat the structure for each order -->
+    <div class="order">
+      <h3 class="order-number">Order #54321</h3>
+      <p class="order-details">Customer: Arya Dubbewar</p>
+      <p class="order-details">Total Amount: $150.00</p>
+      <p class="order-status">Status: Pending</p>
+      <p class="order-details">Date: February 15, 2024</p>
+    </div>
+
+    <!-- Repeat the above structure for the remaining orders -->
+
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

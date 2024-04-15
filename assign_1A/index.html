@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body{
+      
+  background-color: #d4ecff;
+    }
+
+    .header{
+      background-color: #d4ecff;
+    }
+
+    .d-block{
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+      
+    }
+    .carousel-item{
+      display: flex;
+      justify-content: center;
+    }
+    .carousel-inner{
+     
+      align-items: center;
+    }
+
+    .carousel-caption,h2{
+      color: black;
+      justify-content: flex-start;
+    }
+    
+    @media (min-width: 768px) {
+      .d-block{
+        width: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="search-profile">
+      <input type="text" placeholder="Search...">
+      <i class="fa-solid fa-user"></i>
+     
+
+    </div>
+    <!-- Add the login button here -->
+    <a href="login.html" class="btn btn-primary">Login</a>
+  </header>
+
+  <!-- Sidebar -->
+  <!-- Sidebar -->
+<div class="sidebar">
+  <h2>Admin Dashboard</h2>
+  <div class="menu">
+    <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+    <a href="product.html"><i class="fas fa-box"></i> Products</a>
+    <a href="order.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+    <a href="customer.html"><i class="fas fa-users"></i> Customers</a>
+  </div>
+</div>
+
+
+  <!-- Page Content -->
+  <div class="content">
+    <div class="container">
+    
+
+      <!-- Carousel of Top Selling Products -->
+      <h3>TOP SELLING PRODUCTS:</h3>
+<div id="topSellingCarousel" class="carousel slide mt-5" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <!-- First slide content -->
+      <img src="bag.jpeg" class="d-block w-20" alt="..."> <!-- Adjusted image size to fit two images in the carousel -->
+    
+     
+    </div>
+    <div class="carousel-item">
+      <!-- Second slide content -->
+      <img src="images.jpeg" class="d-block w-20" alt="..."> <!-- Adjusted image size to fit two images in the carousel -->
+     
+    </div>
+    <!-- Add more carousel items here as needed -->
+  </div>
+  <a class="carousel-control-prev" href="#topSellingCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#topSellingCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+      
+      <!-- Statistics Cards -->
+      <div class="row">
+        <!-- Statistics Cards Content -->
+      </div>
+
+      <!-- Additional Statistics Cards -->
+      <div class="row mt-4">
+        <!-- Additional Statistics Cards Content -->
+      </div>
+      
+      <!-- Analytics Statistics -->
+<div class="analytics-stats">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Revenue</h5>
+          <p class="card-text">$10,000</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Total Profit</h5>
+          <p class="card-text">$5,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Analytics Graphics -->
+<!-- Analytics Graphics -->
+<div class="analytics">
+  <h2>Analytics</h2>
+  <canvas id="analyticsChart" width="400" height="200"></canvas>
+</div>
+
+
+
+<!-- Footer Section -->
+<footer class="footer mt-5">
+  <div class="container text-center">
+    <span class="text-muted">© 2024 Admin Dashboard. All rights reserved.</span>
+  </div>
+</footer>
+
+
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- JavaScript for Chart.js -->
+  <script src="script.js"></script>
+</body>
+</html>

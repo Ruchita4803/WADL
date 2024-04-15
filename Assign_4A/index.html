@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<head>
+    <title>Swipe Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    <script>
+        $(document).on("pagecreate", "#page1", function() {
+            $("p").on("swipe", function() {
+                var currentItem = $(this).text().trim();
+                if (currentItem === "Swipe to see BREAKFAST MENU") {
+                    $("ul").append("<li>Breakfast menu<li><li><h5>Idli</h5></li><li><h5>Poha</h5></li><li><h5>Upma</h5></li>");               
+                }
+                if (currentItem === "Swipe to see LUNCH & DINNER MENU") {
+                    $("ul").append("<li>Lunch menu<li><li><h5>Paratha</h5></li><li><h5>Pav Bhaji</h5></li><li><h5>Thali</h5></li>");               
+                }
+            });
+
+            $("button").on("click", function(){
+            $("h2").slideUp().slideDown().css("color","purple").animate({opacity:0.5});
+        });
+
+        });
+
+        
+    </script>
+    <style>
+        .color{
+            color: blueviolet;
+        }
+
+        header{
+            background-color: yellowgreen;
+        }
+
+        #myButton{
+            background-color: rgb(233, 118, 118);
+            display: inline;
+            justify-content: center;
+            align-items: center;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="page1">
+        <div data-role="header">
+            <h2>KHANDANI RESTAURANT</h2>
+        </div>
+        <h2 class="heading"> Welcome to Khandani Restaurant! </h2>
+        <h4>TODAY'S SPECIAL:</h4>
+        <ol>
+            <li>
+                <p class="color">Swipe to see BREAKFAST MENU</p>
+            </li>
+            <li>
+                <p class="color">Swipe to see LUNCH & DINNER MENU</p>
+            </li>
+        </ol>
+            
+        <div data-role="main" class="ui-content">
+            <ul data-role="listview" style="color:magenta">
+                
+            </ul>
+            <BR> <BR>  
+                <button id="button">SWIPE UP AND DOWN TO SEE CHANGES</button>
+                <BR>
+                    <BR>
+            <a href="#" id="myButton" class="ui-btn ui-corner-all ui-shadow" >Touch Me</a>
+        </div>
+
+        <div data-role="footer">
+            <h2>@KHANDANI</h2>
+        </div>
+    </div>
+</body>
+</html>

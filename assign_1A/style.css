@@ -1,0 +1,104 @@
+/* Styles for Header Section */
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.search-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.search-profile input[type="text"] {
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Styles for Analytics Section */
+.analytics {
+  margin-top: 50px;
+}
+
+/* Styles for Sidebar */
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #343a40;
+  padding-top: 20px;
+}
+
+.sidebar h2 {
+  color: #fff;
+  text-align: center;
+}
+
+.menu a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #495057;
+}
+
+.menu a.active {
+  background-color: #007bff;
+}
+
+.menu i {
+  margin-right: 10px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+/* Styles for Analytics Statistics */
+/* Styles for Analytics Statistics */
+.analytics-stats {
+  margin-top: 20px;
+}
+
+.analytics-stats .card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 10px;
+  transition: transform 0.3s, background-color 0.3s; /* Added background-color transition */
+}
+
+.analytics-stats .card-title {
+  font-size: 18px;
+  color: #343a40;
+}
+
+.analytics-stats .card-text {
+  font-size: 24px;
+  color: #007bff;
+}
+
+/* Highlight on hover */
+.analytics-stats .card:hover {
+  transform: scale(1.05);
+  background-color: #007bff; /* Change background color on hover */
+}
+
+/* Change text color on hover */
+.analytics-stats .card:hover .card-title,
+.analytics-stats .card:hover .card-text {
+  color: #fff;
+}
+
+
